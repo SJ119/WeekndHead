@@ -9,7 +9,15 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     reload = browserSync.reload,
     rename = require('gulp-rename');
+    deploy = require('gulp-gh-pages');
 
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy());
+});
 
 // Clean task
 // Clears and removes generated files
