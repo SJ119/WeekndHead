@@ -1,2 +1,0 @@
-# WeekndHead
-WeekndHead
