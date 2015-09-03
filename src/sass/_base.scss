@@ -1,0 +1,33 @@
+body {
+    background-color: $color-primary-0;
+    width: auto;
+    height: 99vh;
+    margin: 0px;
+}
+
+.container {
+    @include container();
+    position: relative;
+    height: 100%;
+    iframe {
+        position: fixed;
+        bottom: 0px;
+    }
+}
+
+#weeknd {
+    position: absolute;
+    height: 80%;
+    left: 50%;
+    bottom: 0px;
+    div {
+    	height: 100%;
+    	object {
+            position: relative;
+    	}
+        object.body {
+            height: 100%;
+            left: -50%;
+        }
+    }
+}
