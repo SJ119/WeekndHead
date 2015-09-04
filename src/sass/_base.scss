@@ -3,10 +3,10 @@ body {
     width: 100vw;
     height: 99vh;
     margin: 0px;
+    overflow: hidden;
 }
 
 .container {
-    @include container();
     position: relative;
     height: 100%;
     iframe {
@@ -18,7 +18,7 @@ body {
 #weeknd {
     position: absolute;
     height: 90%;
-    left: 50vw;
+    left: 50%;
     bottom: 0px;
     div {
     	height: 100%;
