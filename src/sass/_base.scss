@@ -1,6 +1,6 @@
 body {
     background-color: $color-primary-0;
-    width: auto;
+    width: 100vw;
     height: 99vh;
     margin: 0px;
 }
@@ -17,15 +17,13 @@ body {
 
 #weeknd {
     position: absolute;
-    height: 80%;
-    left: 50%;
+    height: 90%;
+    left: 50vw;
     bottom: 0px;
     div {
     	height: 100%;
     	object {
             position: relative;
-    	}
-        object.body {
             height: 100%;
             left: -50%;
         }

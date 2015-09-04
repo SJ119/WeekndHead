@@ -42,6 +42,7 @@ gulp.task('copy-lib', function() {
     gulp.src([
             'bower_components/react/react.js',
             'bower_components/jquery/dist/jquery.js',
+            'local_components/widget/widget.js',
             'local_components/waveformjs/waveform.js'
         ])
         .pipe(gulp.dest('dist/lib'));
@@ -51,7 +52,7 @@ gulp.task('copy-lib', function() {
 // Copies required asset files into distribution directory
 gulp.task('copy-assets', function() {
     gulp.src([
-            '../weekndSVG/**/*.svg'
+            'local_components/weekndSVG/weeknd.svg'
         ])
         .pipe(gulp.dest('dist/assets/svg'));
 });

@@ -2,7 +2,7 @@ var Weeknd = React.createClass({
     render: function() {
         return (
           <div>
-            <object className="body" data='assets/svg/weekndWeeknd.svg' type="image/svg+xml" ></object>
+            <object className="body" data='assets/svg/weeknd.svg' type="image/svg+xml" ></object>
           </div>
         );
     }

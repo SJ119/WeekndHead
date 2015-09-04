@@ -4,18 +4,17 @@
 <head>
     <title>weekndHead</title>
     <meta charset="UTF-8" />
-    <link type="text/css" rel="stylesheet" href="../css/weeknd.css" />
-    <script src="../lib/jquery.js"></script>
-    <script src="../lib/react.js"></script>
-    <script src="http://connect.soundcloud.com/sdk.js"></script>
-    <script src="../lib/waveform.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/weeknd.css" />
+    <script src="lib/jquery.js"></script>
+    <script src="lib/widget.js"></script>
+    <script src="lib/react.js"></script>
+    <script src="lib/waveform.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div id="weeknd"></div>
-        <iframe width="100%" height="110" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155876731&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=true"></iframe>
-        <ul id="test"></ul>
+        <iframe id="sound-cloud-widget" width="100%" height="100" scrolling="no" frameborder="no"></iframe>
     </div>
     <script type="text/javascript" src="../js/weeknd.js"></script>
 </body>
