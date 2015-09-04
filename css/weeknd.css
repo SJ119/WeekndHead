@@ -3,19 +3,12 @@ body {
   width: 100vw;
   height: 99vh;
   margin: 0px;
+  overflow: hidden;
 }
 
 .container {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   height: 100%;
-}
-.container:after {
-  content: " ";
-  display: block;
-  clear: both;
 }
 .container iframe {
   position: fixed;
@@ -25,7 +18,7 @@ body {
 #weeknd {
   position: absolute;
   height: 90%;
-  left: 50vw;
+  left: 50%;
   bottom: 0px;
 }
 #weeknd div {
