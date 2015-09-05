@@ -3,10 +3,11 @@ body {
     width: 100vw;
     height: 99vh;
     margin: 0px;
-    overflow: hidden;
 }
 
 .container {
+    @include container();
+    overflow: hidden;
     position: relative;
     height: 100%;
     iframe {
@@ -21,8 +22,8 @@ body {
     left: 50%;
     bottom: 0px;
     div {
-    	height: 100%;
-    	object {
+        height: 100%;
+        object {
             position: relative;
             height: 100%;
             left: -50%;
