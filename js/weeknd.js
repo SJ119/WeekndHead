@@ -10,7 +10,7 @@ function httpGetAsync(theUrl, callback) {
 
 var url = "http://api.soundcloud.com/tracks/155876731";
 var options = {
-    auto_play: false,
+    auto_play: true,
     buying: false,
     liking: false,
     download: false,
@@ -47,25 +47,29 @@ widget.bind(SC.Widget.Events.READY, function() {
 
                     if (prevIndex !== currIndex) {
                         var volumeLevel = soundArray[currIndex];
-                        if (volumeLevel > 130) {
+                        if (volumeLevel > 150) {
                             $('body').css({
-                                'background-color': '#818085'
+                                'background-color': '#FFFFFF'
+                            });
+                        } else if (volumeLevel > 130) {
+                            $('body').css({
+                                'background-color': '#D1CBCB'
                             });
                         } else if (volumeLevel > 110) {
                             $('body').css({
-                                'background-color': '#717076'
+                                'background-color': '#B5AFAF'
                             });
-                        } else if (volumeLevel > 100) {
+                        } else if (volumeLevel > 95) {
                             $('body').css({
-                                'background-color': '#6F5D54'
+                                'background-color': '#9B9595'
                             });
                         } else if (volumeLevel > 90) {
                             $('body').css({
-                                'background-color': '#5F4C4C'
+                                'background-color': '#807B7B'
                             });
-                        } else if (volumeLevel > 70) {
+                        } else if (volumeLevel > 85) {
                             $('body').css({
-                                'background-color': '#444F5C'
+                                'background-color': '#645F5F'
                             });
                         } else {
                             $('body').css({
